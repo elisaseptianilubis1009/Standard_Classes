@@ -58,17 +58,30 @@ public class Standard_Classes {
 //        
 //        String nameJoiner=joiner.toString();
 //        System.out.println(nameJoiner);
-
 //====================StringTokenizer===================================
+//    String values="Elisa Septiani Lubis";
+//    StringTokenizer tokenizer= new StringTokenizer(values, " ");
+//    
+//    while(tokenizer.hasMoreTokens()){
+//        String token= tokenizer.nextToken();
+//        System.out.println(token);
+//    }
+//====================Number Classes=======================
+        Integer intValue = 1000;
 
-    String values="Elisa Septiani Lubis";
-    StringTokenizer tokenizer= new StringTokenizer(values, " ");
-    
-    while(tokenizer.hasMoreTokens()){
-        String token= tokenizer.nextToken();
-        System.out.println(token);
-    }
+        byte byteValue = intValue.byteValue();
+        long longValue = intValue.longValue();
+        float floatValue = intValue.floatValue();
+        double doubleValue = intValue.doubleValue();
+        short shortValue = intValue.shortValue();
 
+        String valueString="elisa";
+        
+        Integer contohInteger= Integer.valueOf(valueString);
+        int contohInt= Integer.parseInt(valueString);
+        
+        
+        
     }
 
 }
