@@ -1,8 +1,8 @@
-
 package standard_classes;
 
-public class Standard_Classes {
+import java.util.StringJoiner;
 
+public class Standard_Classes {
 
     public static void main(String[] args) {
 //        ==================String Classes=============================
@@ -29,29 +29,35 @@ public class Standard_Classes {
 ////        System.out.println(" ".isBlank);// tidak membaca spasi
 
 //==============StringBuffer dan StringBuilder Classes
-           StringBuffer buffer= new StringBuffer();
-           buffer.append("Elisa");
-           buffer.append(" ");
-           buffer.append("Septiani");
-           buffer.append(" ");
-           buffer.append("Lubis");
-           
-           String nameBuffer =buffer.toString();
-           System.out.println(nameBuffer);
-           
-           StringBuilder builder= new StringBuilder();
-           builder.append("Elisa");
-           builder.append(" ");
-           builder.append("Septiani");
-           builder.append(" ");
-           builder.append("Lubis");
-           
-           String nameBuilder= builder.toString();
-           System.out.println(nameBuilder);
-           
-                   
+//           StringBuffer buffer= new StringBuffer();
+//           buffer.append("Elisa");
+//           buffer.append(" ");
+//           buffer.append("Septiani");
+//           buffer.append(" ");
+//           buffer.append("Lubis");
+//           
+//           String nameBuffer =buffer.toString();
+//           System.out.println(nameBuffer);
+//           
+//           StringBuilder builder= new StringBuilder();
+//           builder.append("Elisa");
+//           builder.append(" ");
+//           builder.append("Septiani");
+//           builder.append(" ");
+//           builder.append("Lubis");
+//           
+//           String nameBuilder= builder.toString();
+//           System.out.println(nameBuilder);
+//====================== StringJoiner Classes===========================
+        StringJoiner joiner = new StringJoiner(",", "[", "]");
+
+        joiner.add("Elisa");
+        joiner.add("Septiani");
+        joiner.add("Lubis");
         
-        
+        String nameJoiner=joiner.toString();
+        System.out.println(nameJoiner);
+
     }
-    
+
 }
