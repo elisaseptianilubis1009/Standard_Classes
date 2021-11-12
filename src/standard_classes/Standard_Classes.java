@@ -1,7 +1,7 @@
 package standard_classes;
 
-import java.util.StringJoiner;
-import java.util.StringTokenizer;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Standard_Classes {
 
@@ -67,21 +67,32 @@ public class Standard_Classes {
 //        System.out.println(token);
 //    }
 //====================Number Classes=======================
-        Integer intValue = 1000;
+//        Integer intValue = 1000;
+//
+//        byte byteValue = intValue.byteValue();
+//        long longValue = intValue.longValue();
+//        float floatValue = intValue.floatValue();
+//        double doubleValue = intValue.doubleValue();
+//        short shortValue = intValue.shortValue();
+//
+//        String valueString="elisa";
+//        
+//        Integer contohInteger= Integer.valueOf(valueString);
+//        int contohInt= Integer.parseInt(valueString);
+//=====================Data and Calender Classes========================
+        Date tanggal = new Date();
+        Date tanggal2 = new Date(968572736000L);
+        System.out.println(tanggal);
+        System.out.println(tanggal2);
+        
+        Calendar calender= Calendar.getInstance();
+        calender.set(Calendar.YEAR, 2000);
+        calender.set(Calendar.MONTH, Calendar.JANUARY);
+        
+        Date result= calender.getTime();
+        System.out.println(result);
 
-        byte byteValue = intValue.byteValue();
-        long longValue = intValue.longValue();
-        float floatValue = intValue.floatValue();
-        double doubleValue = intValue.doubleValue();
-        short shortValue = intValue.shortValue();
-
-        String valueString="elisa";
-        
-        Integer contohInteger= Integer.valueOf(valueString);
-        int contohInt= Integer.parseInt(valueString);
-        
-        
-        
+    
     }
 
 }
