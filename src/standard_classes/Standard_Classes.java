@@ -1,6 +1,7 @@
 package standard_classes;
 
 import java.util.StringJoiner;
+import java.util.StringTokenizer;
 
 public class Standard_Classes {
 
@@ -49,14 +50,24 @@ public class Standard_Classes {
 //           String nameBuilder= builder.toString();
 //           System.out.println(nameBuilder);
 //====================== StringJoiner Classes===========================
-        StringJoiner joiner = new StringJoiner(",", "[", "]");
+//        StringJoiner joiner = new StringJoiner(",", "[", "]");
+//
+//        joiner.add("Elisa");
+//        joiner.add("Septiani");
+//        joiner.add("Lubis");
+//        
+//        String nameJoiner=joiner.toString();
+//        System.out.println(nameJoiner);
 
-        joiner.add("Elisa");
-        joiner.add("Septiani");
-        joiner.add("Lubis");
-        
-        String nameJoiner=joiner.toString();
-        System.out.println(nameJoiner);
+//====================StringTokenizer===================================
+
+    String values="Elisa Septiani Lubis";
+    StringTokenizer tokenizer= new StringTokenizer(values, " ");
+    
+    while(tokenizer.hasMoreTokens()){
+        String token= tokenizer.nextToken();
+        System.out.println(token);
+    }
 
     }
 
