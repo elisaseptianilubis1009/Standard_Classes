@@ -24,7 +24,8 @@ public class Standard_Classes {
         for(String value : array){
             System.out.println(value);
         }
-        System.out.println("".isEmpty());
+        System.out.println(" ".isEmpty());// membaca spasi sebagai char
+//        System.out.println(" ".isBlank);// tidak membaca spasi
         
         
     }
