@@ -1,7 +1,10 @@
 package standard_classes;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Standard_Classes {
 
@@ -80,19 +83,44 @@ public class Standard_Classes {
 //        Integer contohInteger= Integer.valueOf(valueString);
 //        int contohInt= Integer.parseInt(valueString);
 //=====================Data and Calender Classes========================
-        Date tanggal = new Date();
-        Date tanggal2 = new Date(968572736000L);
-        System.out.println(tanggal);
-        System.out.println(tanggal2);
-        
-        Calendar calender= Calendar.getInstance();
-        calender.set(Calendar.YEAR, 2000);
-        calender.set(Calendar.MONTH, Calendar.JANUARY);
-        
-        Date result= calender.getTime();
-        System.out.println(result);
+//        Date tanggal = new Date();
+//        Date tanggal2 = new Date(968572736000L);
+//        System.out.println(tanggal);
+//        System.out.println(tanggal2);
+//        
+//        Calendar calender= Calendar.getInstance();
+//        calender.set(Calendar.YEAR, 2000);
+//        calender.set(Calendar.MONTH, Calendar.JANUARY);
+//        
+//        Date result= calender.getTime();
+//        System.out.println(result);
+//===================Arrays Classes===================
+//        int[] number = {
+//            5, 6, 7, 2, 3, 1, 76, 21, 9, 8, 11
+//        };
+//
+//        Arrays.sort(number);
+//        System.out.println(Arrays.toString(number));
+//        System.out.println(Arrays.binarySearch(number, 76));
+//        
+//        int [] result = Arrays.copyOf(number, 5);
+//        System.out.println(Arrays.toString(result));
+//        
+//        int[] result2 = Arrays.copyOfRange(number, 5, 10);
+//        System.out.println(Arrays.toString(result2));
+//================ Reguler Expression=======================
+        String name = "Elisa Septiani Lubis Alamat Kota Bandung";
 
-    
+        Pattern pattern = Pattern.compile("[a-zA-Z]*[i][a-zA-Z]*");
+
+        Matcher matcher = pattern.matcher(name);
+        
+        while(matcher.find()){
+            String result= matcher.group();
+            System.out.println(result);
+        }
+        
+
     }
 
 }
